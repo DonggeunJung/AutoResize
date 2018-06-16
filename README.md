@@ -31,5 +31,5 @@ That's all.
 * GitHub Link : https://github.com/DonggeunJung/AutoResize
 
 * Any question
- - Email : topsan72@gmail.com
- - Author : Donggeun Jung (Dennis)
+ = Email : topsan72@gmail.com
+ = Author : Donggeun Jung (Dennis)
