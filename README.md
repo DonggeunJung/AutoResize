@@ -14,7 +14,7 @@ This Library support Auto Resize Layout for All Device Monitors.
 </div>
 
 <div>
-<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_IB.png" width="40%"></img>
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_IB.png" width="400px"></img>
 </div>
 
 
