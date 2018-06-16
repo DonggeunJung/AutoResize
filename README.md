@@ -5,13 +5,10 @@ This Library support Auto Resize Layout for All Device Monitors.
 
 
 [Image1 : iPhone 5s (Before using AutoResize)]
-<div>
-<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s1.png?raw=true width="400px"></img>
-</div>
-
 [Image1 : iPhone 5s (After using AutoResize)]
 <div>
-<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_IB.png" width="400px"></img>
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s1.png?raw=true width="400px"></img>
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_IB.png" width="350px"></img>
 </div>
 
 
