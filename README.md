@@ -3,6 +3,17 @@
 
 This Library support Auto Resize Layout for All Device Monitors.
 
+
+
+<div>
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_IB.png" width="40%"></img>
+
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s_Before.png width="40%"></img>
+
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s_After.png width="40%"></img>
+
+</div>
+
 < How to use >
 
 1. Copy 'BaseViewController.swift' file to your Source porject.
