@@ -6,7 +6,7 @@ This Library support Auto Resize Layout for All Device Monitors.
 
 
 <div>
-<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s1.png width="40%"></img>
+<img src="https://github.com/DonggeunJung/AutoResize/blob/master/ScreenCapture/AutoResize_iP5s1.png?raw=true width="40%"></img>
 </div>
 
 <div>
