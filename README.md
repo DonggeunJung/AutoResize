@@ -18,5 +18,4 @@ class ViewController: BaseViewController {
 
 That's all.
 
-
-
+* GitHub Link : https://github.com/DonggeunJung/AutoResize
