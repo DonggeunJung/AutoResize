@@ -16,6 +16,16 @@ class ViewController: UIViewController {
 [After]
 class ViewController: BaseViewController {
 
+4. Open '*.storyboard' file.
+
+5. Set default Device 'View as : iPhone 8'
+
+6. Adjust all View's size and location.
+
 That's all.
 
 * GitHub Link : https://github.com/DonggeunJung/AutoResize
+
+* Any question
+ - Email : topsan72@gmail.com
+ - Author : Donggeun Jung (Dennis)
