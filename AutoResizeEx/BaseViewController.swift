@@ -3,8 +3,8 @@
 //  AutoResizeEx
 //
 //  Created by 정동근 on 2018. 6. 16..
-//  Copyright © 2018년 Dennis Jung. All rights reserved.
-//
+//  Copyright © 2018 Dennis Jung. All rights reserved.
+// Email : topsan72@gmail.com / Tel : 1-770-756-0073
 
 import UIKit
 
