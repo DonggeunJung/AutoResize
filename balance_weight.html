@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Balance Weight</title>
+
+<script type="text/javascript" charset="utf-8">
+
+var text1 = '<?xml version="1.0" encoding="utf-8"?>'
+ + '\n<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"'
+ + '\n    xmlns:tools="http://schemas.android.com/tools"'
+ + '\n    android:layout_width="match_parent"'
+ + '\n    android:layout_height="match_parent"'
+ + '\n    android:paddingBottom="@dimen/activity_vertical_margin"'
+ + '\n    android:paddingLeft="@dimen/activity_horizontal_margin"'
+ + '\n    android:paddingRight="@dimen/activity_horizontal_margin"'
+ + '\n    android:paddingTop="@dimen/activity_vertical_margin">'
+ + '\n'
+ + '\n    <TextView'
+ + '\n        android:layout_width="wrap_content"'
+ + '\n        android:layout_height="wrap_content"'
+ + '\n        android:text="Input weight"'
+ + '\n        android:id="@+id/textView1" />'
+ + '\n'
+ + '\n    <EditText'
+ + '\n        android:layout_width="80dp"'
+ + '\n        android:layout_height="wrap_content"'
+ + '\n        android:id="@+id/editText1"'
+ + '\n        android:layout_below="@+id/textView1"'
+ + '\n        android:layout_marginTop="37dp" />'
+ + '\n'
+ + '\n    <Button'
+ + '\n        android:layout_width="wrap_content"'
+ + '\n        android:layout_height="wrap_content"'
+ + '\n        android:text="Result"'
+ + '\n        android:id="@+id/button"'
+ + '\n        android:onClick="onClick"'
+ + '\n        android:layout_alignTop="@+id/editText1"'
+ + '\n        android:layout_alignParentEnd="true" />'
+ + '\n'
+ + '\n</RelativeLayout>';
+
+var text1tag = '&lt;?xml version="1.0" encoding="utf-8"?&gt;'
+ + '<br>&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"'
+ + '<br> &nbsp; &nbsp;xmlns:tools="http://schemas.android.com/tools"'
+ + '<br> &nbsp; &nbsp;android:layout_width="match_parent"'
+ + '<br> &nbsp; &nbsp;android:layout_height="match_parent"'
+ + '<br> &nbsp; &nbsp;android:paddingBottom="@dimen/activity_vertical_margin"'
+ + '<br> &nbsp; &nbsp;android:paddingLeft="@dimen/activity_horizontal_margin"'
+ + '<br> &nbsp; &nbsp;android:paddingRight="@dimen/activity_horizontal_margin"'
+ + '<br> &nbsp; &nbsp;android:paddingTop="@dimen/activity_vertical_margin"&gt;'
+ + '<br>'
+ + '<br> &nbsp; &nbsp;&lt;TextView'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_width="wrap_content"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_height="wrap_content"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:text="Input weight"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:id="@+id/textView1" /&gt;'
+ + '<br>'
+ + '<br> &nbsp; &nbsp;&lt;EditText'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_width="80dp"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_height="wrap_content"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:id="@+id/editText1"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_below="@+id/textView1"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_marginTop="37dp" /&gt;'
+ + '<br>'
+ + '<br> &nbsp; &nbsp;&lt;Button'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_width="wrap_content"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_height="wrap_content"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:text="Result"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:id="@+id/button"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:onClick="onClick"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_alignTop="@+id/editText1"'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;android:layout_alignParentEnd="true" /&gt;'
+ + '<br>'
+ + '<br>&lt;/RelativeLayout&gt;';
+
+var text2 = '    TextView textView1;'
+ + '\n    EditText editText1;';
+
+var text2tag = ' &nbsp; &nbsp;TextView textView1;'
+ + '<br> &nbsp; &nbsp;EditText editText1;';
+
+var text3 = '        textView1 = (TextView)findViewById(R.id.textView1);'
+ + '\n        editText1 = (EditText)findViewById(R.id.editText1);';
+
+var text3tag = ' &nbsp; &nbsp; &nbsp; &nbsp;textView1 = (TextView)findViewById(R.id.textView1);'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;editText1 = (EditText)findViewById(R.id.editText1);';
+
+var text4 = '    public void onClick(View v) {'
+ + '\n        int goal = 7, i = 0;'
+ + '\n        for (; i <= 10; i++) {'
+ + '\n            if (i < goal)'
+ + '\n                continue;'
+ + '\n            break;'
+ + '\n        }'
+ + '\n        textView1.setText("i = " + i);'
+ + '\n    }';
+
+var text4tag = ' &nbsp; &nbsp;public void onClick(View v) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;int goal = 7, i = 0;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;for (; i &lt;= 10; i++) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (i &lt; goal)'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;continue;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;textView1.setText("i = " + i);'
+ + '<br> &nbsp; &nbsp;}';
+
+var text5 = '        int goal = 7, i=0, j=0, result = 0;'
+ + '\n        for( ; i <= 10; i+=5) {'
+ + '\n            for(j=0; j <= 5; j++) {'
+ + '\n                result = i + j;'
+ + '\n                if (result < goal)'
+ + '\n                    continue;'
+ + '\n                break;'
+ + '\n            }'
+ + '\n        }'
+ + '\n        textView1.setText("i = " + i + " / j = " + j + " / result = " + result);';
+
+var text5tag = ' &nbsp; &nbsp; &nbsp; &nbsp;int goal = 7, i=0, j=0, result = 0;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;for( ; i &lt;= 10; i+=5) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(j=0; j &lt;= 5; j++) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;result = i + j;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (result &lt; goal)'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;continue;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;textView1.setText("i = " + i + " / j = " + j + " / result = " + result);';
+
+var text6 = '        int goal = 7, i=0, j=0, result = 0;'
+ + '\n        Loop1:for( ; i <= 10; i+=5) {'
+ + '\n            for(j=0; j <= 5; j++) {'
+ + '\n                result = i + j;'
+ + '\n                if (result < goal)'
+ + '\n                    continue;'
+ + '\n                break Loop1;'
+ + '\n            }'
+ + '\n        }'
+ + '\n        textView1.setText("i = " + i + " / j = " + j + " / result = " + result);';
+
+var text6tag = ' &nbsp; &nbsp; &nbsp; &nbsp;int goal = 7, i=0, j=0, result = 0;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;Loop1:for( ; i &lt;= 10; i+=5) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(j=0; j &lt;= 5; j++) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;result = i + j;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (result &lt; goal)'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;continue;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break Loop1;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;textView1.setText("i = " + i + " / j = " + j + " / result = " + result);';
+
+var text7 = '        String str = editText1.getText().toString();'
+ + '\n        int sum = Integer.parseInt(str);'
+ + '\n        int i=0, j=0, k=0;'
+ + '\n        boolean found = false;'
+ + '\n'
+ + '\n        Loop1:for( ; i <= 10; i++) {            // 2g weight'
+ + '\n            for(j = 0; j <= 10; j++) {        // 3g weight'
+ + '\n                for(k = 0; k <= 10; k++) {    // 5g weight'
+ + '\n                    int temp = i * 2 + j * 3 + k * 5;'
+ + '\n                    if (temp == sum) {'
+ + '\n                        found = true;'
+ + '\n                        break Loop1;'
+ + '\n                    }'
+ + '\n                }'
+ + '\n            }'
+ + '\n        }'
+ + '\n'
+ + '\n        if( found == false )'
+ + '\n            textView1.setText("Can not find the answer.");'
+ + '\n        else'
+ + '\n            textView1.setText("2g - " + i + " / 3g - " + j + " / 5g - "'
+ + '\n               + k);';
+
+var text7tag = ' &nbsp; &nbsp; &nbsp; &nbsp;String str = editText1.getText().toString();'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;int sum = Integer.parseInt(str);'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;int i=0, j=0, k=0;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;boolean found = false;'
+ + '<br>'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;Loop1:for( ; i &lt;= 10; i++) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 2g weight'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(j = 0; j &lt;= 10; j++) { &nbsp; &nbsp; &nbsp; &nbsp;// 3g weight'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(k = 0; k &lt;= 10; k++) { &nbsp; &nbsp;// 5g weight'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int temp = i * 2 + j * 3 + k * 5;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (temp == sum) {'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;found = true;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break Loop1;'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;}'
+ + '<br>'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;if( found == false )'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;textView1.setText("Can not find the answer.");'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp;else'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;textView1.setText("2g - " + i + " / 3g - " + j + " / 5g - "'
+ + '<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; + k );';
+
+
+
+function init() {
+    document.getElementById("text1").innerHTML = text1tag;
+    document.getElementById("text2").innerHTML = text2tag;
+    document.getElementById("text3").innerHTML = text3tag;
+    document.getElementById("text4").innerHTML = text4tag;
+    document.getElementById("text5").innerHTML = text5tag;
+    document.getElementById("text6").innerHTML = text6tag;
+    document.getElementById("text7").innerHTML = text7tag;
+    document.getElementById("text8").innerHTML = text8tag;
+}
+
+function copyText1() {
+	copyTextToClipboard(text1);
+}
+
+function copyText2() {
+	copyTextToClipboard(text2);
+}
+
+function copyText3() {
+	copyTextToClipboard(text3);
+}
+
+function copyText4() {
+	copyTextToClipboard(text4);
+}
+
+function copyText5() {
+	copyTextToClipboard(text5);
+}
+
+function copyText6() {
+	copyTextToClipboard(text6);
+}
+
+function copyText7() {
+	copyTextToClipboard(text7);
+}
+
+function copyText8() {
+	copyTextToClipboard(text8);
+}
+
+function copyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+
+  // Place in top-left corner of screen regardless of scroll position.
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+
+  // Ensure it has a small width and height. Setting to 1px / 1em
+  // doesn't work as this gives a negative w/h on some browsers.
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+
+  // We don't need padding, reducing the size if it does flash render.
+  textArea.style.padding = 0;
+
+  // Clean up any borders.
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+
+  // Avoid flash of white box if rendered for any reason.
+  textArea.style.background = 'transparent';
+
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+}
+
+</script>
+</head>
+<body onload="init();" >
+    <span id="textTitle"><<< Java & Android app coding class / 안드로이드 게임 개발로 배우는 코딩 교실 - BalanceWeight >>></span><br>
+    # Author : Dennis Jung (정동근) / Mail : topofsan@naver.com / topsan72@gmail.com
+    <p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-1" onClick="copyText1();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text1">text1...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-2" onClick="copyText2();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text2">text2...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-3" onClick="copyText3();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text3">text3...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-4" onClick="copyText4();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text4">text4...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-5" onClick="copyText5();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text5">text5...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-6" onClick="copyText6();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text6">text6...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+    <input type="button" value="Copy Code-7" onClick="copyText7();"/>
+    ----------------------------------------------------------------<br>
+    <span id="text7">text7...</span>
+    <p></p><p></p>	============================================== <p></p><p></p><p></p><p></p>
+
+</body>
+</html>
